@@ -134,6 +134,7 @@ namespace ProtoBuf
                 stringInterner = null;
             }
             if (netCache != null) netCache.Clear();
+            context = null;
         }
         internal int TryReadUInt32VariantWithoutMoving(bool trimNegative, out uint value)
         {
